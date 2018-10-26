@@ -2,6 +2,7 @@
   "name": "apia",
   "version": "1.0.1",
   "main": "src/index.js",
+  "files": "src",
   "repository": "git@github.com:louismerlin/apia.git",
   "author": "Louis Merlin <louis.merlin@epfl.ch>",
   "license": "MIT",
