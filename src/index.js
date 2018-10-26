@@ -9,7 +9,7 @@ apia.use((req, res, next) => {
 })
 
 // API request with relevant info
-apia.get('/apia', (req, res) => 
+apia.get('/apia', (req, res) =>
   res.send(hits)
 )
 
