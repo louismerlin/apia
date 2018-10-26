@@ -6,7 +6,11 @@ const apia = Router()
 const hits = {}
 
 apia.use((req, res, next) => {
-  hits[req.url] = hits[req.url] + 1 || 1
+  const urlHits = hits[req.url] || {}
+  const now = Date.now()
+  const date = now - now % 60000 // Round down to the previous minute
+  urlHits[date] = urlHits[date] + 1 || 1
+  hits[req.url] = urlHits
   next()
 })
 
