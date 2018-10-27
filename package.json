@@ -1,6 +1,6 @@
 {
   "name": "apia",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "files": [
     "src",
@@ -16,7 +16,8 @@
     "lint": "standard",
     "clean": "rimraf src/grapia",
     "build": "run-s clean build:grapia",
-    "build:grapia": "parcel build grapia/index.html -d src/grapia --public-url ./"
+    "build:grapia": "parcel build grapia/index.html -d src/grapia --public-url ./",
+    "prepublish": "run-s build"
   },
   "dependencies": {
     "express": "^4.16.4"
