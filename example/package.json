@@ -1,0 +1,13 @@
+{
+  "name": "apia-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "apia": "^1.0.9",
+    "express": "^4.16.4"
+  }
+}
