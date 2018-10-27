@@ -1,8 +1,11 @@
 {
   "name": "apia",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "src/index.js",
-  "files": "src",
+  "files": [
+    "src",
+    "src/grapia"
+  ],
   "repository": "git@github.com:louismerlin/apia.git",
   "author": "Louis Merlin <louis.merlin@epfl.ch>",
   "license": "MIT",
@@ -19,6 +22,8 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "nodemon": "^1.18.5",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.3",
