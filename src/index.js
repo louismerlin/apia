@@ -1,7 +1,7 @@
-const { Router } = require('express')
+const express = require('express')
 const path = require('path')
 
-const apia = Router()
+const apia = express.Router()
 
 const hits = {}
 
@@ -20,9 +20,10 @@ apia.get('/apia', (req, res) =>
 )
 
 // Graphical view of relevant info
-apia.get('/grapia', (req, res) => {
+apia.use('/grapia', express.static(path.join(__dirname, 'grapia')))
+/*apia.get('/grapia', (req, res) => {
   const p = path.join(__dirname, 'grapia/index.html')
   return res.sendFile(p)
-})
+})*/
 
 module.exports = apia

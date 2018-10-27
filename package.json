@@ -7,14 +7,25 @@
   "author": "Louis Merlin <louis.merlin@epfl.ch>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon test/index.js",
-    "lint": "standard"
+    "start": "npm-run-all clean --parallel start:*",
+    "start:apia": "nodemon test/index.js",
+    "start:grapia": "parcel watch grapia/index.html -d src/grapia --public-url ./",
+    "lint": "standard",
+    "clean": "rimraf src/grapia",
+    "build": "run-s clean build:grapia",
+    "build:grapia": "parcel build grapia/index.html -d src/grapia --public-url ./"
   },
   "dependencies": {
     "express": "^4.16.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.5",
-    "standard": "^12.0.1"
+    "normalize.css": "^8.0.0",
+    "npm-run-all": "^4.1.3",
+    "parcel-bundler": "^1.10.3",
+    "preact": "^8.3.1",
+    "rimraf": "^2.6.2",
+    "standard": "^12.0.1",
+    "unfetch": "^4.0.1"
   }
 }
