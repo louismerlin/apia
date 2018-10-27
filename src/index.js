@@ -21,9 +21,9 @@ apia.get('/apia', (req, res) =>
 
 // Graphical view of relevant info
 apia.use('/grapia', express.static(path.join(__dirname, 'grapia')))
-/*apia.get('/grapia', (req, res) => {
+/* apia.get('/grapia', (req, res) => {
   const p = path.join(__dirname, 'grapia/index.html')
   return res.sendFile(p)
-})*/
+}) */
 
 module.exports = apia

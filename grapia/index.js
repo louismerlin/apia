@@ -1,4 +1,4 @@
-import React, { h } from 'preact'
+import React, { h } from 'preact' // eslint-disable-line no-unused-vars
 import App from './App'
 
 import 'normalize.css'
