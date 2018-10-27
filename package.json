@@ -1,10 +1,10 @@
 {
   "name": "apia",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "src/index.js",
   "files": [
     "src",
-    "src/grapia/*"
+    "src/grapia"
   ],
   "repository": "git@github.com:louismerlin/apia.git",
   "author": "Louis Merlin <louis.merlin@epfl.ch>",
