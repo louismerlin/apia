@@ -1,4 +1,4 @@
-import { h, Component } from 'preact' // eslint-disable-line no-unused-vars
+import React, { Component } from 'preact'
 import fetch from 'unfetch'
 
 class App extends Component {
