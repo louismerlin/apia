@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount () {
-    fetch('http://localhost:3000/apia').then(res => res.json()).then(hits => this.setState({ hits }))
+    fetch('http://localhost:3000/apia', { headers: { 'password': 'helloworld' } }).then(res => res.json()).then(hits => this.setState({ hits }))
   }
 
   render () {

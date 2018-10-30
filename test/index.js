@@ -4,7 +4,7 @@ const apia = require('../src/index')
 const app = express()
 const port = 3000
 
-app.use(apia)
+app.use(apia('helloworld'))
 
 app.get('/', (req, res) =>
   res.send('Hello, World !')
