@@ -13,7 +13,7 @@ class App extends Component {
 
   render () {
     return (
-      <div style={{ maxWidth: '640px', margin: 'auto', left: '50%' }}>
+      <div style={{ maxWidth: '640px', margin: 'auto' }}>
         {Object.entries(this.state.hits).map(([endpoint, times]) => (
           <p><code>{endpoint}</code> ~ {Object.values(times).reduce((a, b) => a + b, 0)}</p>
         ))}
